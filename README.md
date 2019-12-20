@@ -1,6 +1,6 @@
 # Chat_apspace DB設計
 ## usersテーブル
-||Column|Type|Options|
+|Column|Type|Options|
 |------|----|-------|
 |email|string|null: false|
 |password|string|null: false|
@@ -10,7 +10,7 @@
 - has_many :groups, through:  :groups_users
 
 ## groupsテーブル
-||Column|Type|Options|
+|Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
 ### Association
@@ -18,7 +18,7 @@
 - has_many :users, through:  :groups_users
 
 ## messagesテーブル
-||Column|Type|Options|
+|Column|Type|Options|
 |------|----|-------|
 |text|text||
 |image|text||
