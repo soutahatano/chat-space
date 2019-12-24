@@ -2,13 +2,13 @@
   .side-bar__user-name
     .side-bar__user-name__top-item
       %p.side-bar__user-name__top-item__name
-        masa
+        = current_user.name
       %ul.side-bar__user-name__top-item__icons
         %li.side-bar__user-name__top-item__icons__new-btn
           = link_to do
             %i.fa.fa-edit
         %li.side-bar__user-name__top-item__icons__edit-btn
-          = link_to do
+          = link_to edit_user_path(current_user) do
             %i.fa.fa-cog
   .side-bar__group-list
     =link_to do
