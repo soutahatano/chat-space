@@ -90,6 +90,7 @@ a{
         color: #999999;
         display: flex;
         &__name{
+          padding-left: 5px;
         }
       }
     }
@@ -125,10 +126,12 @@ a{
           margin-left: 10px;
         }
       }
-      &__text{
-        color: #434a54;
-        font-size: 14px;
-        margin-bottom: 46px;
+      &__content{
+        &__text{
+          color: #434a54;
+          font-size: 14px;
+          margin-bottom: 46px;
+        }
       }
     }
   }
