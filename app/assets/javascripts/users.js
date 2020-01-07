@@ -3,11 +3,10 @@ $(function() {
   function  appendusers(user){
     let html = `
       <div class="chat-group-user clearfix">
-        <input name='group[user_ids][]' type='hidden' value='${user.id}'>
-        <p class="chat-group-user__name">${user.name}</p>
-        <div class="user-search-add chat-group-user__btn chat-group-user__btn--add" data-user-id="${user.id}" data-user-name="${user.name}">追加</div>
+      <p class="chat-group-user__name">${user.name}</p>
+      <div class="user-search-add chat-group-user__btn chat-group-user__btn--add" data-user-id="${user.id}" data-user-name="${user.name}">追加</div>
       </div>
-    `;
+      `;
     $("#user-search-result").append(html);
   }
 
